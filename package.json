@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "keywords": [
+    "textlintrule"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "scripts": {
+    "test": "textlint-scripts test",
+    "build": "textlint-scripts build",
+    "prepublish": "npm run --if-present build",
+    "watch": "textlint-scripts build --watch"
+  },
+  "devDependencies": {
+    "@textlint/types": "^14.0.4",
+    "@types/node": "^20.14.9",
+    "textlint-scripts": "^14.0.4",
+    "textlint-tester": "^14.0.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "name": "textlint-rule-no-curly-quotes",
+  "description": "prevents the usage of curly quotation marks, and replace them to normal ascii ones",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sapegin/textlint-rule-no-curly-quotes.git"
+  },
+  "author": "aborazmeh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sapegin/textlint-rule-no-curly-quotes/issues"
+  },
+  "homepage": "https://github.com/sapegin/textlint-rule-no-curly-quotes#readme"
+}
